@@ -1,0 +1,91 @@
+/* CSS algemeen */
+/* CSS body */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    background-image: linear-gradient(rgb(213, 216, 255), rgb(195, 195, 220), rgb(159, 172, 215), rgb(197, 201, 224), rgb(213, 216, 255));
+    color: rgb(122,120,120);
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* CSS nav */
+        
+/* CSS main */
+/* CSS img class */
+.logo {
+    max-width: 30%;
+    margin: 1em;
+    margin-left: 0.3em;
+}
+/* CSS media&keyframes */
+@media only screen and (max-width: 600px) {
+
+}
+/* CSS footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+nav {
+    display: flex;
+    background-color: rgb(122, 122, 172);
+    justify-content: space-around;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.184);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+}
+
+li {
+    display: inline-block;
+    margin: 1em;
+    flex: 1;
+    padding: 0.3em;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: transparent;
+    transition: background-color 0.3s ease, padding 0.2s ease;
+    text-decoration: none;
+    padding: 0.3em;
+}
+
+a:hover {
+    background-color: #595A7D;
+    padding: 1.3em;
+}
+
+a:hover, a:active {
+    background-color: #595A7D;
+    color: white;
+}
+
+footer nav ul {
+    padding: 0.3em;
+    background-color: rgb(122, 122, 172)
+}
+
+footer nav ul li {
+    list-style: none;
+    background-color: rgb(122, 122, 172);
+}
+  
+  footer nav ul li.active {
+    background-color: #595A7D; 
+  }
+
+
