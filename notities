@@ -1,0 +1,22 @@
+
+punten die ik niet snap en wil verbeteren
+
+
+1. De footerbalk raakt de randen van het scherm niet aan op een iphone scherm
+
+2. de iconen in de footerbalk verspringen naar beneden. 
+ze horen helemaal zichtbaar.
+
+3. Bij assortiment wou ik graag een afbeelding slider die van links en rechts 
+kan worden geswipet met radio buttons eronder waar je ook op kunt klikken. 
+Ik heb het geprobeerd met youtube en chatGPT maar ik kom er echt niet uit.
+
+4. Bij de contactpagina wou ik de buttons recht onder elkaar hebben, 
+maar het lukt niet met flexbox. 
+moet ik dan een aparte class voor ze maken of de margin left / right aanpassen?
+
+5. de openingstijden verspringen ook naar rechts. horen in het midden.
+
+6. Het lukt me ook niet om de website up te daten op github , pull request
+
+7. ik snap niet wat de w3c validation errors zijn.
