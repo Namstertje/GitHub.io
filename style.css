@@ -3,39 +3,181 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     width: 100%;
-    background-image: linear-gradient(rgb(213, 216, 255), rgb(195, 195, 220), rgb(159, 172, 215), rgb(197, 201, 224), rgb(213, 216, 255));
-    color: rgb(122,120,120);
+    background-image: linear-gradient(rgb(165, 167, 218), rgb(102, 133, 106), rgb(108, 145, 153), rgb(140, 79, 129), #3f4377);
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
     margin: 0;
 }
 
+header {
+    background-color:  rgb(122, 122, 172);
+    border-bottom: 0.5em solid  #595A7D;
+    padding: 0.5em;
+}
+
 h1 {
+    text-align: right;
+    font-size: 1.3em;
+    margin-top: -3.2em;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.03em;
+    word-spacing: 0.2em;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.slide {
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#Kleding:checked ~ .slide.Kleding,
+#Schoenen:checked ~ .slide.Schoenen,
+#Brillen:checked ~ .slide.Brillen {
+    opacity: 1;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    width: 10em; 
+    height: 10em; 
+    background-color: #595A7D; 
+    border-radius: 1em;
+    cursor: pointer;
+}
+        
+/* CSS main */
+main {
+    padding: 1em;
+    background-color: transparent;
+    padding-bottom: 8em;
+    text-align: center;
+    position: relative;
+}
+
+h3, p {
+    margin: 1em;
     text-align: center;
 }
 
-/* CSS nav */
-        
-/* CSS main */
-/* CSS img class */
-.logo {
-    max-width: 30%;
-    margin: 1em;
-    margin-left: 0.3em;
+.duurzaamheid1, .duurzaamheid2 {
+    margin: 0;
+    padding: 1em;
+    color: rgb(240, 255, 252);
+    background-color: rgb(145, 162, 140);
 }
+
+.duurzaamheid1 {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.duurzaamheid2 {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.inclusiviteit {
+    margin: 0;
+    padding: 1em;
+    color: rgb(240, 255, 252);
+    background-color: rgb(145, 162, 140);
+    border-radius: 1em;
+}
+
+/* CSS img */
+img {
+    border-radius: 1em;
+}
+
+.logo {
+    max-width: 35%;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.blad-icoon {
+    max-width: 100%;
+    display: flex;
+    align-items: end;
+    height: 3em;
+    margin-left: 13em;
+    margin-top: -3.5em;
+}
+
+.FotoVoorkant {
+    max-width: 100%;
+    margin: auto;
+    height: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #e8e8ea solid 0.3em;
+    text-align: center;
+}
+
+.ReduceReuseRecycle {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 1em;
+    display: block;
+    height: 15em;
+    text-align: center;
+    border: #e8e8ea solid 0.3em;
+}
+
+.InstaScreenshot {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 1em;
+    display: block;
+    height: 15em;
+    border: #e8e8ea solid 0.3em;
+}
+
 /* CSS media&keyframes */
 @media only screen and (max-width: 600px) {
-
 }
-/* CSS footer */
+
+/* CSS buttons */
+button {
+    background-color: #595A7D;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    margin: 1em;
+    margin-left: 5em;
+}
+
+button :hover {
+    background-color: #9b9cb8;
+    color: #3f4377;
+    transition: 500ms ease;
+}
+
+/* CSS footer/nav */
 footer {
     position: fixed;
     bottom: 0;
     width: 100vw;
+    height: 4em;
+    border-top: #595A7D solid 0.5em;
 }
+
 nav {
     display: flex;
-    background-color: rgb(122, 122, 172);
     justify-content: space-around;
-    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.184);
+    align-items: flex-start;
 }
 
 ul {
@@ -53,6 +195,19 @@ li {
     padding: 0.3em;
 }
 
+.openingstijden {
+    padding: 0;
+    margin-bottom: 0em;
+    padding-left: 0.5em;
+}
+
+.openinglijst {
+    background-color: rgb(145, 162, 140);
+    padding-bottom: 1em;
+    border-radius: 1em;
+    border: #e8e8ea solid 0.3em;
+}
+
 a {
     color: white;
     font-weight: bold;
@@ -64,18 +219,7 @@ a {
     padding: 0.3em;
 }
 
-a:hover {
-    background-color: #595A7D;
-    padding: 1.3em;
-}
-
-a:hover, a:active {
-    background-color: #595A7D;
-    color: white;
-}
-
 footer nav ul {
-    padding: 0.3em;
     background-color: rgb(122, 122, 172)
 }
 
@@ -83,9 +227,14 @@ footer nav ul li {
     list-style: none;
     background-color: rgb(122, 122, 172);
 }
-  
-  footer nav ul li.active {
-    background-color: #595A7D; 
-  }
 
+footer nav ul li a img {
+    max-width: 3em;
+    height: auto;
+    display: block;
+}
+
+.footericonen {
+    margin-top: -1em;
+}
 
