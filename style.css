@@ -102,9 +102,9 @@ img {
 }
 
 .logo {
-    max-width: 35%;
-    margin: 0;
-    margin-bottom: 1em;
+    max-width: 30%;
+    margin: 1em;
+    margin-left: -0.2em;
 }
 
 .blad-icoon {
